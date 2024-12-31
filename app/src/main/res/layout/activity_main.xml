@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:translationZ="0dp"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:visibility="visible"
+            tools:ignore="UselessParent">
+
+            <View
+                android:id="@+id/shadowLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorToolbarShadow"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/headerText"
+                style="@style/HeaderTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_toStartOf="@id/mainSettingsImageView"
+                android:gravity="start|center"
+                android:text="@string/app_name"
+                tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+
+            <ImageView
+                android:id="@+id/mainSettingsImageView"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_circle_effect"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_ui_settings"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:navGraph="@navigation/nav_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:clipChildren="false"
+        android:elevation="@dimen/_6sdp"
+        android:outlineAmbientShadowColor="@color/colorBottomNavigationShadow"
+        android:outlineSpotShadowColor="@color/colorBottomNavigationShadow"
+        app:compatShadowEnabled="true"
+        app:elevation="@dimen/_6sdp"
+        app:itemRippleColor="@color/colorRipple"
+        app:itemTextAppearanceActive="@style/BottomNavigationViewSelectedTextStyle"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewUnSelectedTextStyle"
+        app:itemTextColor="@color/colorOnPrimary"
+        app:labelVisibilityMode="labeled"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:ignore="UnusedAttribute" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

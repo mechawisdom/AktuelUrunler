@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryVariant"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="Shopping List"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <EditText
+            android:id="@+id/commentInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_9sdp"
+            android:layout_toStartOf="@id/addButton"
+            android:background="@drawable/rounded_rectangle_28sdp"
+            android:elevation="0dp"
+            android:ems="500"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center|start"
+            android:hint="Yeni öğe ekle.."
+            android:includeFontPadding="true"
+            android:inputType="textMultiLine|textLongMessage|textCapSentences"
+            android:maxEms="500"
+            android:maxLength="500"
+            android:maxLines="6"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingTop="@dimen/_9sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_9sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_12ssp"
+            tools:ignore="Autofill,HardcodedText" />
+
+
+        <ImageView
+            android:id="@+id/addButton"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignBottom="@id/commentInput"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:background="@drawable/circle_shape_green"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_circle_effect"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_ui_add"
+            app:tint="@color/colorPrimary"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_290sdp"
+        android:layout_marginBottom="16dp" />
+
+
+</LinearLayout>

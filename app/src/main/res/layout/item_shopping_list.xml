@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="@dimen/_3sdp"
+    android:animateLayoutChanges="true"
+    android:animationCache="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/ripple_rectangle_effect_12sdp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/_6sdp">
+
+
+    <View
+        android:id="@+id/greenCircleBox"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle_shape_green"
+        android:foreground="@drawable/ripple_circle_effect"
+        android:transitionName="image" />
+
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_toEndOf="@id/greenCircleBox"
+        android:fontFamily="@font/gilroy_medium"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/colorOnPrimary"
+        android:textSize="@dimen/_15ssp" />
+
+</RelativeLayout>
+

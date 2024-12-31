@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aktüel Ürünler</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_menu_home">Ana Sayfa</string>
+    <string name="bottom_menu_shopping_list">Alışveriş Listesi</string>
+
+    <string name="toolbar_recently_added">Son Eklenenler</string>
+    <string name="home_item_view_all">Tamamını İncele</string>
+
+    <string name="please_wait">Lütfen bekleyin..</string>
+    <string name="update_completed">Veriler güncellendi</string>
+</resources>

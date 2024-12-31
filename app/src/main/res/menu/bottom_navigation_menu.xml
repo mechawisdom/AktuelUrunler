@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fragment_home"
+        android:icon="@drawable/selector_menu_1"
+        app:destination="@id/homeFragment"
+        android:title="@string/bottom_menu_home" />
+
+    <item
+        android:id="@+id/fragment_shopping_list"
+        android:icon="@drawable/selector_menu_2"
+        app:destination="@id/shoppingListFragment"
+        android:title="@string/bottom_menu_shopping_list" />
+</menu>

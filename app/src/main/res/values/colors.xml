@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryVariant">#F8F8F8</color>
+    <color name="colorSurfaceLow">#EBEBEB</color>
+
+    <color name="colorOnPrimary">#262626</color>
+    <color name="colorOnPrimaryVariant">#3F3F3F</color>
+
+    <color name="colorBottomNavigationShadow">#9D9D9D</color>
+    <color name="colorToolbarShadow">#E2E2E2</color>
+    <color name="colorRipple">#1f000000</color>
+    <color name="colorIconColor">#222222</color>
+    <color name="colorPrimaryContainer">#2cda94</color>
+
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+</resources>

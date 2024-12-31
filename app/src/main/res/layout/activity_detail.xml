@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.detail.DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/detailHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46sdp"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:elevation="@dimen/_2sdp"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="visible"
+        tools:ignore="UselessParent">
+
+        <View
+            android:id="@+id/shadowLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorToolbarShadow" />
+
+        <ImageView
+            android:id="@+id/detailBackImageView"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_circle_effect"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_ui_arrow_left"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/headerText"
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_9sdp"
+            android:layout_toStartOf="@id/highDefinitionTextView"
+            android:layout_toEndOf="@id/detailBackImageView"
+            android:gravity="start|center"
+            android:text="BİM"
+            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/highDefinitionTextView"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_9sdp"
+            android:layout_toStartOf="@id/detailBookmarkImageView"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/gilroy_black"
+            android:foreground="@drawable/ripple_circle_effect"
+            android:gravity="center"
+            android:text="HD"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="@dimen/_16ssp"
+            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/detailBookmarkImageView"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_circle_effect"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_ui_bookmark"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+    <com.mechadev.indirim.aktuel.urunler.util.photoview.PhotoView
+        android:id="@+id/detailPhotoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detailHeaderLayout"
+        android:adjustViewBounds="true"
+        android:scaleType="center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/detailFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_ui_pencil"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="statusBarBackground">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+
+
+        <item name="android:windowBackground">@color/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="bottomSheetStyle">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+
+    <style name="AppThemeTransparentBackground" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+
+    <style name="BottomNavigationViewSelectedTextStyle">
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+
+    <style name="BottomNavigationViewUnSelectedTextStyle">
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">@color/colorOnPrimaryVariant</item>
+    </style>
+
+</resources>
